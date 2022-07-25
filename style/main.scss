@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "flexible-hw";
+  src: url(../fonts/flexible-h800-w200.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "flexible-variable";
+  src: url(../fonts/flexible-variable.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "suissintl-light";
+  src: url(../fonts/suisseIntl-light.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ppneuemontreal-bold";
+  src: url(../fonts/PPNeueMontreal-Bold.otf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ppneuemontreal-normal";
+  src: url(../fonts/PPNeueMontreal-Medium.otf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$background-color: #1e1e1e;
+$text-color: #dcff7d;
+
+html,
+body {
+  background-color: $background-color;
+  color: $text-color;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  &__p {
+    line-height: 13.5px;
+  }
+
+  &__nav {
+    &__ul {
+      list-style: none;
+
+      &__li {
+        &__a {
+          text-decoration: none;
+          color: $text-color;
+
+          &__span {
+            &.hover-underline-animation {
+              display: inline-block;
+              position: relative;
+              color: $text-color;
+            }
+
+            &.hover-underline-animation::after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              transform: scaleX(0);
+              height: 2px;
+              bottom: 0;
+              left: 0;
+              background-color: $text-color;
+              transform-origin: bottom right;
+              transition: transform 0.25s ease-out;
+            }
+
+            &.hover-underline-animation:hover::after {
+              transform: scaleX(1);
+              transform-origin: bottom left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-title {
+  &__h1 {
+    font-family: "flexible-hw";
+    font-size: 120px;
+    line-height: 115.5px;
+
+    &__span {
+      width: 70%;
+      text-align: end;
+    }
+  }
+}
+
+.section-details {
+  p:nth-of-type(1) {
+    font-family: "ppneuemontreal-normal";
+  }
+  p:nth-of-type(2) {
+    font-family: "flexible-hw";
+    font-size: 120px;
+    margin-top: -40px;
+
+    span {
+      margin-left: 20px;
+    }
+  }
+}

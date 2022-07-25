@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "flexible-hw";
+  src: url(../fonts/flexible-h800-w200.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "flexible-variable";
+  src: url(../fonts/flexible-variable.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "suissintl-light";
+  src: url(../fonts/suisseIntl-light.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ppneuemontreal-bold";
+  src: url(../fonts/PPNeueMontreal-Bold.otf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ppneuemontreal-normal";
+  src: url(../fonts/PPNeueMontreal-Medium.otf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html,
+body {
+  background-color: #1e1e1e;
+  color: #dcff7d;
+  height: 100%;
+  width: 100%;
+}
+
+.header__p {
+  line-height: 13.5px;
+}
+.header__nav__ul {
+  list-style: none;
+}
+.header__nav__ul__li__a {
+  text-decoration: none;
+  color: #dcff7d;
+}
+.header__nav__ul__li__a__span.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #dcff7d;
+}
+.header__nav__ul__li__a__span.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #dcff7d;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.header__nav__ul__li__a__span.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.section-title__h1 {
+  font-family: "flexible-hw";
+  font-size: 120px;
+  line-height: 115.5px;
+}
+.section-title__h1__span {
+  width: 70%;
+  text-align: end;
+}
+
+.section-details p:nth-of-type(1) {
+  font-family: "ppneuemontreal-normal";
+}
+.section-details p:nth-of-type(2) {
+  font-family: "flexible-hw";
+  font-size: 120px;
+  margin-top: -40px;
+}
+.section-details p:nth-of-type(2) span {
+  margin-left: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
