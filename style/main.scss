@@ -45,44 +45,48 @@ body {
 }
 
 .header {
-  &__p {
+  height: 20%;
+
+  &__item {
     line-height: 13.5px;
+    color: $text-color;
+    text-decoration: none;
   }
 
-  &__nav {
-    &__ul {
+  &__item:hover {
+    color: $text-color;
+  }
+
+  .nav {
+    &__list {
       list-style: none;
 
-      &__li {
-        &__a {
-          text-decoration: none;
+      &__item {
+        text-decoration: none;
+        color: $text-color;
+
+        &.hover-underline-animation {
+          display: inline-block;
+          position: relative;
           color: $text-color;
+        }
 
-          &__span {
-            &.hover-underline-animation {
-              display: inline-block;
-              position: relative;
-              color: $text-color;
-            }
+        &.hover-underline-animation::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: $text-color;
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+        }
 
-            &.hover-underline-animation::after {
-              content: "";
-              position: absolute;
-              width: 100%;
-              transform: scaleX(0);
-              height: 2px;
-              bottom: 0;
-              left: 0;
-              background-color: $text-color;
-              transform-origin: bottom right;
-              transition: transform 0.25s ease-out;
-            }
-
-            &.hover-underline-animation:hover::after {
-              transform: scaleX(1);
-              transform-origin: bottom left;
-            }
-          }
+        &.hover-underline-animation:hover::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
         }
       }
     }
@@ -90,26 +94,33 @@ body {
 }
 
 .section-title {
-  &__h1 {
+  &__title {
     font-family: "flexible-hw";
-    font-size: 120px;
-    line-height: 115.5px;
-
-    &__span {
-      width: 70%;
-      text-align: end;
-    }
+    font-size: 8vw;
+    line-height: 8vw;
+    width: 70%;
+    text-align: end;
+    position: relative;
+    top: -70px;
+    left: -190px;
+    font-weight: lighter;
   }
 }
 
 .section-details {
-  p:nth-of-type(1) {
+  &__detail {
+    padding-left: 81px;
+  }
+
+  &__detail:nth-child(1) {
     font-family: "ppneuemontreal-normal";
   }
-  p:nth-of-type(2) {
+
+  &__detail:nth-child(2) {
     font-family: "flexible-hw";
-    font-size: 120px;
-    margin-top: -40px;
+    font-size: 5vw;
+    margin-top: -30px;
+    font-weight: lighter;
 
     span {
       margin-left: 20px;

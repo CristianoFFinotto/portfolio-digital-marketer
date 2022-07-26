@@ -36,22 +36,30 @@ body {
   width: 100%;
 }
 
-.header__p {
-  line-height: 13.5px;
+.header {
+  height: 20%;
 }
-.header__nav__ul {
+.header__item {
+  line-height: 13.5px;
+  color: #dcff7d;
+  text-decoration: none;
+}
+.header__item:hover {
+  color: #dcff7d;
+}
+.header .nav__list {
   list-style: none;
 }
-.header__nav__ul__li__a {
+.header .nav__list__item {
   text-decoration: none;
   color: #dcff7d;
 }
-.header__nav__ul__li__a__span.hover-underline-animation {
+.header .nav__list__item.hover-underline-animation {
   display: inline-block;
   position: relative;
   color: #dcff7d;
 }
-.header__nav__ul__li__a__span.hover-underline-animation::after {
+.header .nav__list__item.hover-underline-animation::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -63,30 +71,36 @@ body {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-.header__nav__ul__li__a__span.hover-underline-animation:hover::after {
+.header .nav__list__item.hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-.section-title__h1 {
+.section-title__title {
   font-family: "flexible-hw";
-  font-size: 120px;
-  line-height: 115.5px;
-}
-.section-title__h1__span {
+  font-size: 8vw;
+  line-height: 8vw;
   width: 70%;
   text-align: end;
+  position: relative;
+  top: -70px;
+  left: -190px;
+  font-weight: lighter;
 }
 
-.section-details p:nth-of-type(1) {
+.section-details__detail {
+  padding-left: 81px;
+}
+.section-details__detail:nth-child(1) {
   font-family: "ppneuemontreal-normal";
 }
-.section-details p:nth-of-type(2) {
+.section-details__detail:nth-child(2) {
   font-family: "flexible-hw";
-  font-size: 120px;
-  margin-top: -40px;
+  font-size: 5vw;
+  margin-top: -30px;
+  font-weight: lighter;
 }
-.section-details p:nth-of-type(2) span {
+.section-details__detail:nth-child(2) span {
   margin-left: 20px;
 }
 
