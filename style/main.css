@@ -1,3 +1,14 @@
+::-webkit-scrollbar {
+  background-color: transparent;
+  height: 20px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #dcff7d;
+  border-radius: 20px;
+}
+
 @font-face {
   font-family: "flexible-hw";
   src: url(../fonts/flexible-h800-w200.ttf) format("truetype");
@@ -59,18 +70,18 @@ a:hover {
   text-decoration: none;
   font-weight: 500;
 }
-.header .nav__list {
+.header .nav-list {
   list-style: none;
 }
-.header .nav__list__item {
+.header .nav-list__item {
   font-family: "ppneuemontreal-normal";
 }
-.header .nav__list__item.hover-underline-animation {
+.header .nav-list__item.hover-underline-animation {
   display: inline-block;
   position: relative;
   color: #dcff7d;
 }
-.header .nav__list__item.hover-underline-animation::after {
+.header .nav-list__item.hover-underline-animation::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -82,7 +93,7 @@ a:hover {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-.header .nav__list__item.hover-underline-animation:hover::after {
+.header .nav-list__item.hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -94,8 +105,8 @@ a:hover {
   width: 70%;
   text-align: end;
   position: relative;
-  top: -70px;
-  left: -190px;
+  top: -10vh;
+  left: -13vw;
   font-weight: lighter;
 }
 
@@ -105,7 +116,7 @@ a:hover {
 .section-details__detail:nth-child(1) {
   font-family: "ppneuemontreal-normal";
   line-height: 18px;
-  font-size: 19.5px;
+  font-size: 1vw;
 }
 .section-details__detail:nth-child(1) span {
   padding-left: 2.2px;
@@ -117,38 +128,66 @@ a:hover {
   font-weight: lighter;
 }
 .section-details__detail:nth-child(2) span {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .section-intro {
   margin-top: 300px;
   font-family: "ppneuemontreal-normal";
 }
+.section-intro__item {
+  font-size: 1vw;
+}
 .section-intro .col:nth-child(1) .section-intro__item:nth-child(1) {
   width: 62.75px;
   text-align: end;
 }
 .section-intro .col:nth-child(2) .section-intro__item {
-  font-size: 20px;
   line-height: 20px;
 }
 .section-intro .col:nth-child(2) .section-intro__item:nth-child(2) {
-  transform: translateX(-145px);
+  transform: translateX(-7.15vw);
 }
 .section-intro .col:nth-child(2) .section-intro__item:nth-child(2) span {
   display: block;
-  width: 331.2px;
+  width: 16.5vw;
   text-align: end;
 }
 .section-intro__details {
   padding-top: 80px;
-  font-size: 14px;
-  padding-left: 42px;
+  font-size: 1vw;
+  padding-left: 2.1vw;
+  line-height: 20px;
 }
-.section-intro__details__certificates {
+.section-intro__certificates {
   line-height: 50px;
   padding-bottom: 1.5px;
   border-bottom: 2px solid #dcff7d;
+}
+
+.section-projects {
+  margin-top: 400px;
+  font-family: "ppneuemontreal-normal";
+}
+.section-projects__item {
+  font-size: 1vw;
+  margin-bottom: 0;
+}
+.section-projects .col:nth-child(1) .section-projects__item {
+  width: 62.75px;
+  text-align: end;
+}
+.section-projects .col:nth-child(3) .section-projects__item {
+  font-size: 2.5vw;
+  width: 90%;
+  padding-left: 40px;
+  padding-right: 32px;
+  text-align: end;
+}
+.section-projects__line {
+  background-color: #dcff7d;
+  height: 2px;
+  width: 60vw;
 }
 
 /*# sourceMappingURL=main.css.map */

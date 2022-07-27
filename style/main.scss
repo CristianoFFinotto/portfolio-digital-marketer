@@ -1,3 +1,6 @@
+@use "variables";
+@use "scrollbar";
+
 @font-face {
   font-family: "flexible-hw";
   src: url(../fonts/flexible-h800-w200.ttf) format("truetype");
@@ -33,29 +36,26 @@
   font-style: normal;
 }
 
-$background-color: #1e1e1e;
-$text-color: #dcff7d;
-
 html,
 body {
-  background-color: $background-color;
-  color: $text-color;
+  background-color: variables.$background-color;
+  color: variables.$text-color;
   height: 100%;
   width: 100%;
 }
 
 a {
   text-decoration: none;
-  color: $text-color;
+  color: variables.$text-color;
 }
 
 a:hover {
-  color: $text-color;
+  color: variables.$text-color;
 }
 
 ::selection {
-  color: $background-color;
-  background: $text-color;
+  color: variables.$background-color;
+  background: variables.$text-color;
 }
 
 .header {
@@ -63,41 +63,39 @@ a:hover {
 
   &__item {
     line-height: 13.5px;
-    color: $text-color;
+    color: variables.$text-color;
     text-decoration: none;
     font-weight: 500;
   }
 
-  .nav {
-    &__list {
-      list-style: none;
+  .nav-list {
+    list-style: none;
 
-      &__item {
-        font-family: "ppneuemontreal-normal";
+    &__item {
+      font-family: "ppneuemontreal-normal";
 
-        &.hover-underline-animation {
-          display: inline-block;
-          position: relative;
-          color: $text-color;
-        }
+      &.hover-underline-animation {
+        display: inline-block;
+        position: relative;
+        color: variables.$text-color;
+      }
 
-        &.hover-underline-animation::after {
-          content: "";
-          position: absolute;
-          width: 100%;
-          transform: scaleX(0);
-          height: 2px;
-          bottom: 0;
-          left: 0;
-          background-color: $text-color;
-          transform-origin: bottom right;
-          transition: transform 0.25s ease-out;
-        }
+      &.hover-underline-animation::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: variables.$text-color;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
 
-        &.hover-underline-animation:hover::after {
-          transform: scaleX(1);
-          transform-origin: bottom left;
-        }
+      &.hover-underline-animation:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
       }
     }
   }
@@ -111,8 +109,8 @@ a:hover {
     width: 70%;
     text-align: end;
     position: relative;
-    top: -70px;
-    left: -190px;
+    top: -10vh;
+    left: -13vw;
     font-weight: lighter;
   }
 }
@@ -125,7 +123,7 @@ a:hover {
   &__detail:nth-child(1) {
     font-family: "ppneuemontreal-normal";
     line-height: 18px;
-    font-size: 19.5px;
+    font-size: 1vw;
     span {
       padding-left: 2.2px;
     }
@@ -138,7 +136,7 @@ a:hover {
     font-weight: lighter;
 
     span {
-      margin-left: 20px;
+      margin-left: 10px;
     }
   }
 }
@@ -146,6 +144,10 @@ a:hover {
 .section-intro {
   margin-top: 300px;
   font-family: "ppneuemontreal-normal";
+
+  &__item {
+    font-size: 1vw;
+  }
 
   .col:nth-child(1) {
     .section-intro__item:nth-child(1) {
@@ -156,14 +158,13 @@ a:hover {
 
   .col:nth-child(2) {
     .section-intro__item {
-      font-size: 20px;
       line-height: 20px;
     }
     .section-intro__item:nth-child(2) {
-      transform: translateX(-145px);
+      transform: translateX(-7.15vw);
       span {
         display: block;
-        width: 331.2px;
+        width: 16.5vw;
         text-align: end;
       }
     }
@@ -171,13 +172,47 @@ a:hover {
 
   &__details {
     padding-top: 80px;
-    font-size: 14px;
-    padding-left: 42px;
+    font-size: 1vw;
+    padding-left: 2.1vw;
+    line-height: 20px;
+  }
 
-    &__certificates {
-      line-height: 50px;
-      padding-bottom: 1.5px;
-      border-bottom: 2px solid $text-color;
+  &__certificates {
+    line-height: 50px;
+    padding-bottom: 1.5px;
+    border-bottom: 2px solid variables.$text-color;
+  }
+}
+
+.section-projects {
+  margin-top: 400px;
+  font-family: "ppneuemontreal-normal";
+
+  &__item {
+    font-size: 1vw;
+    margin-bottom: 0;
+  }
+
+  .col:nth-child(1) {
+    .section-projects__item {
+      width: 62.75px;
+      text-align: end;
     }
+  }
+
+  .col:nth-child(3) {
+    .section-projects__item {
+      font-size: 2.5vw;
+      width: 90%;
+      padding-left: 40px;
+      padding-right: 32px;
+      text-align: end;
+    }
+  }
+
+  &__line {
+    background-color: variables.$text-color;
+    height: 2px;
+    width: 60vw;
   }
 }
