@@ -120,13 +120,13 @@ a:hover {
     text-align: end;
     position: relative;
     top: -10vh;
-    left: -13vw;
+    left: -9vw;
     font-weight: lighter;
   }
 }
 
 .section-details {
-  margin-top: 4vw;
+  margin-top: 5.5vw;
 
   &__detail {
     padding-left: 81px;
@@ -204,7 +204,9 @@ a:hover {
   padding-left: 5vw;
   font-family: "ppneuemontreal-normal";
 
-  .col {
+  .col,
+  .col-1,
+  .col-2 {
     display: flex;
     align-items: center;
   }
@@ -213,86 +215,45 @@ a:hover {
     font-size: 1vw;
     margin-bottom: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
-  .col:nth-child(1) {
+  .col-2:nth-child(1) {
+    padding-right: 0 !important;
     .separator__item {
       width: 62.75px;
       justify-content: end;
     }
   }
 
-  .col:nth-child(3) {
+  .col {
+    padding-left: 0 !important;
+  }
+
+  /* .col:nth-child(2) {
+    position: relative;
+  } */
+
+  .col-2:nth-child(3) {
     .separator__item {
       font-size: 2.5vw;
-      padding-left: 173px;
+
+      /*  padding-left: 173px; */
     }
   }
 
   &__line {
-    background-color: variables.$text-color;
-    height: 2px;
-    width: 70vw;
-    position: absolute;
     display: flex;
     align-items: center;
-  }
-
-  @media (min-width: 1000px) {
-    &__line {
-      width: 74vw;
-      left: 13vw;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    &__line {
-      width: 74vw;
-      left: 12vw;
-    }
-  }
-
-  @media (min-width: 1300px) {
-    &__line {
-      width: 73vw;
-      left: 11vw;
-    }
-  }
-
-  @media (min-width: 1400px) {
-    &__line {
-      width: 73vw;
-      left: 11vw;
-    }
-  }
-
-  @media (min-width: 1500px) {
-    &__line {
-      width: 72vw;
-      left: 10.5vw;
-    }
-  }
-
-  @media (min-width: 1600px) {
-    &__line {
-      width: 71vw;
-      left: 10vw;
-    }
-  }
-
-  @media (min-width: 1800px) {
-    &__line {
-      width: 70vw;
-      left: 10vw;
-    }
-  }
-
-  @media (min-width: 1900px) {
-    &__line {
-      width: 69vw;
-      left: 9.2vw;
-    }
+    height: 2px;
+    background-color: variables.$text-color;
+    border: none;
+    opacity: 1;
+    /*  position: absolute;
+    left: -87%; */
+    width: 100%;
   }
 }
 
@@ -355,6 +316,7 @@ a:hover {
   font-family: "ppneuemontreal-normal";
   line-height: 1.3vw;
   padding-left: 5vw;
+  margin-top: 5vh;
 
   .row:nth-child(1) {
     .col:nth-child(1) {
@@ -366,14 +328,17 @@ a:hover {
   }
 
   .row:nth-child(2) {
-    .col {
+    .col-auto {
+      display: flex;
+      justify-content: end;
       .section-contact__info {
         font-size: 5vw;
         line-height: 4.3vw;
         text-align: end;
         padding-top: 5vw;
+        width: fit-content;
         position: relative;
-        left: -60px;
+        left: 180px;
       }
     }
   }
@@ -381,6 +346,30 @@ a:hover {
   .row:nth-child(3) {
     font-size: 16px;
     padding-top: 100px;
+
+    .col:nth-child(2) {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  &__linkedin {
+    padding-left: 82px;
+    margin-right: 17px;
+  }
+
+  &__telegram {
+    position: relative;
+    left: 105px;
+  }
+
+  &__google {
+    padding-left: 68px;
+    margin-right: 18px;
+  }
+
+  &__copyright {
+    margin-left: 189px;
   }
 }
 
@@ -395,66 +384,48 @@ a:hover {
 }
 
 @media (min-width: 1100px) {
+  .separator__line {
+
+  }
 }
 
 @media (min-width: 1200px) {
-  .section-contact .row:nth-child(1) .col:nth-child(1) .section-contact__info {
-    margin-left: 93px;
-  }
-  .section-contact .row:nth-child(2) .col .section-contact__info {
-    padding-right: 30px;
+  .separator__line {
+    
   }
 }
 @media (min-width: 1300px) {
-  .section-contact .row:nth-child(2) .col .section-contact__info {
-    padding-right: 55px;
+  .separator__line {
+    
   }
 }
 @media (min-width: 1400px) {
-  .section-contact .row:nth-child(1) .col:nth-child(1) .section-contact__info {
-    margin-left: 98px;
-  }
-  .section-contact .row:nth-child(2) .col .section-contact__info {
-    padding-right: 65px;
+ .separator__line {
+    
   }
 }
 @media (min-width: 1500px) {
-  .section-contact .row:nth-child(1) .col:nth-child(1) .section-contact__info {
-    margin-left: 100px;
-  }
-  .section-contact .row:nth-child(2) .col .section-contact__info {
-    padding-right: 70px;
+  .separator__line {
+    
   }
 }
 @media (min-width: 1600px) {
-  .section-contact .row:nth-child(1) .col:nth-child(1) .section-contact__info {
-    margin-left: 105px;
-  }
-  .section-contact .row:nth-child(2) .col .section-contact__info {
-    padding-right: 70px;
+  .separator__line {
+    
   }
 }
 @media (min-width: 1700px) {
-  .section-contact .row:nth-child(1) .col:nth-child(1) .section-contact__info {
-    margin-left: 110px;
-  }
-  .section-contact .row:nth-child(2) .col .section-contact__info {
-    padding-right: 150px;
+  .separator__line {
+    
   }
 }
 @media (min-width: 1800px) {
-  .section-contact .row:nth-child(1) .col:nth-child(1) .section-contact__info {
-    margin-left: 112px;
-  }
-  .section-contact .row:nth-child(2) .col .section-contact__info {
-    padding-right: 170px;
+  .separator__line {
+    
   }
 }
 @media (min-width: 1900px) {
-  .section-contact .row:nth-child(1) .col:nth-child(1) .section-contact__info {
-    margin-left: 115px;
+  .separator__line {
+    
   }
-  .section-contact .row:nth-child(2) .col .section-contact__info {
-    padding-right: 180px;
-  }
-} */
+}  */
