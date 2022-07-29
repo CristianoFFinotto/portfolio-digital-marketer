@@ -80,6 +80,8 @@ a:hover {
   .nav-list {
     list-style: none;
     display: flex;
+    padding: 0;
+    width: fit-content;
   }
 }
 
@@ -224,7 +226,7 @@ a:hover {
   .col:nth-child(3) {
     .separator__item {
       font-size: 2.5vw;
-      padding-left: 220px;
+      padding-left: 173px;
     }
   }
 
@@ -288,47 +290,56 @@ a:hover {
 
   @media (min-width: 1900px) {
     &__line {
-      width: 70vw;
+      width: 69vw;
       left: 9.2vw;
     }
   }
 }
 
 .section-projects {
+  padding-left: 5vw;
+
   &__project-title {
     font-size: 4vw;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
 
     &--font {
       font-family: "flexible-variable";
     }
   }
 
+  .col {
+    display: flex;
+    align-items: center;
+  }
+
   .row:nth-child(1) {
+    padding-top: 3vw;
     .col:nth-child(1) {
       .section-projects__project-title {
-        padding-left: 7vw;
+        padding-left: 62.75px;
       }
     }
+  }
 
+  .row:nth-child(2) {
+    padding-top: 3vw;
     .col:nth-child(2) {
-      display: flex;
-      align-items: start;
-      padding-top: 30px;
+      justify-content: end;
     }
-
     .col:nth-child(3) {
       .section-projects__project-title {
-        padding-top: 5vw;
-        padding-left: 7vw;
+        padding-left: 115px;
       }
     }
   }
 
   .row:nth-child(3) {
-    .col-4 {
-      .section-projects__project-title {
-        padding-top: 20px;
-      }
+    padding-top: 3vw;
+    .col:nth-child(1) {
+      justify-content: end;
     }
   }
 
@@ -349,7 +360,7 @@ a:hover {
     .col:nth-child(1) {
       .section-contact__info {
         font-size: 1.3vw;
-        margin-left: 32px;
+        padding-left: 62.75px;
       }
     }
   }
@@ -360,8 +371,9 @@ a:hover {
         font-size: 5vw;
         line-height: 4.3vw;
         text-align: end;
-        padding-right: 100px;
-        padding-top: 100px;
+        padding-top: 5vw;
+        position: relative;
+        left: -60px;
       }
     }
   }

@@ -1687,6 +1687,8 @@ a:hover {
 .header .nav-list {
   list-style: none;
   display: flex;
+  padding: 0;
+  width: fit-content;
 }
 
 .hover-underline-animation {
@@ -1809,7 +1811,7 @@ a:hover {
 }
 .separator .col:nth-child(3) .separator__item {
   font-size: 2.5vw;
-  padding-left: 220px;
+  padding-left: 173px;
 }
 .separator__line {
   background-color: #dcff7d;
@@ -1863,31 +1865,47 @@ a:hover {
 }
 @media (min-width: 1900px) {
   .separator__line {
-    width: 70vw;
+    width: 69vw;
     left: 9.2vw;
   }
 }
 
+.section-projects {
+  padding-left: 5vw;
+}
 .section-projects__project-title {
   font-size: 4vw;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
 }
 .section-projects__project-title--font {
   font-family: "flexible-variable";
 }
-.section-projects .row:nth-child(1) .col:nth-child(1) .section-projects__project-title {
-  padding-left: 7vw;
-}
-.section-projects .row:nth-child(1) .col:nth-child(2) {
+.section-projects .col {
   display: flex;
-  align-items: start;
-  padding-top: 30px;
+  align-items: center;
 }
-.section-projects .row:nth-child(1) .col:nth-child(3) .section-projects__project-title {
-  padding-top: 5vw;
-  padding-left: 7vw;
+.section-projects .row:nth-child(1) {
+  padding-top: 3vw;
 }
-.section-projects .row:nth-child(3) .col-4 .section-projects__project-title {
-  padding-top: 20px;
+.section-projects .row:nth-child(1) .col:nth-child(1) .section-projects__project-title {
+  padding-left: 62.75px;
+}
+.section-projects .row:nth-child(2) {
+  padding-top: 3vw;
+}
+.section-projects .row:nth-child(2) .col:nth-child(2) {
+  justify-content: end;
+}
+.section-projects .row:nth-child(2) .col:nth-child(3) .section-projects__project-title {
+  padding-left: 115px;
+}
+.section-projects .row:nth-child(3) {
+  padding-top: 3vw;
+}
+.section-projects .row:nth-child(3) .col:nth-child(1) {
+  justify-content: end;
 }
 .section-projects__project-image {
   width: 200px;
@@ -1902,14 +1920,15 @@ a:hover {
 }
 .section-contact .row:nth-child(1) .col:nth-child(1) .section-contact__info {
   font-size: 1.3vw;
-  margin-left: 32px;
+  padding-left: 62.75px;
 }
 .section-contact .row:nth-child(2) .col .section-contact__info {
   font-size: 5vw;
   line-height: 4.3vw;
   text-align: end;
-  padding-right: 100px;
-  padding-top: 100px;
+  padding-top: 5vw;
+  position: relative;
+  left: -60px;
 }
 .section-contact .row:nth-child(3) {
   font-size: 16px;
