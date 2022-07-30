@@ -5774,6 +5774,10 @@ a:hover {
   opacity: 1;
 }
 
+.separator-mobile ~ .separator-mobile {
+  margin-top: 50px;
+}
+
 .section-projects {
   padding-left: 5vw;
   font-family: "ppneuemontreal-normal";
@@ -5885,8 +5889,9 @@ a:hover {
 
 .section-contact-mobile {
   font-family: "ppneuemontreal-normal";
-  line-height: 15px;
+  line-height: 25px;
   margin-top: 50px;
+  margin-bottom: 20px;
 }
 .section-contact-mobile .row:nth-child(3) {
   padding-bottom: 20px;
@@ -5906,7 +5911,7 @@ a:hover {
 .section-contact-mobile__social {
   display: flex;
   flex-direction: column;
-  font-size: 2.5vw;
+  font-size: 4vw;
 }
 .section-contact-mobile__email {
   text-align: end;
@@ -5950,7 +5955,8 @@ a:hover {
     margin-top: 12vw;
   }
   .section-contact-mobile__social {
-    line-height: 2.4vw;
+    font-size: 2vw;
+    line-height: 3vw;
   }
 }
 /* PC */

@@ -52,3 +52,7 @@
     opacity: 1;
   }
 }
+
+.separator-mobile ~ .separator-mobile {
+  margin-top: 50px;
+}
