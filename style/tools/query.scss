@@ -1,20 +1,38 @@
+/* tablet */
+
 @media (min-width: 768px) {
-  .header {
-    .nav-list {
-      display: none;
+  .section-title {
+    margin-top: 12vw;
+    &__title {
+      font-size: 12vw;
+      line-height: 12vw;
+    }
+  }
+
+  .section-details {
+    &__detail:nth-child(1) {
+      font-family: "ppneuemontreal-normal";
+      line-height: 18px;
+      font-size: 2vw;
+      span {
+        padding-left: 2.2px;
+      }
     }
 
-    .nav-list-hamburger--hide {
-      display: none;
+    &__detail:nth-child(2) {
+      font-family: "flexible-hw";
+      font-size: 10vw;
+      margin-top: -30px;
+      font-weight: lighter;
     }
+  }
 
-    .hamburger-menu {
-      display: flex;
-      justify-content: end;
-    }
+  .nav-list-hamburger {
+    margin-top: 12vw;
   }
 }
 
+/* PC */
 @media (min-width: 992px) {
   .header {
     .nav-list {
@@ -22,6 +40,39 @@
     }
     .hamburger-menu {
       display: none;
+    }
+    .nav-list-hamburger {
+      display: none;
+    }
+  }
+
+  .section-title {
+    margin-top: 5vw;
+    &__title {
+      font-size: 8vw;
+      line-height: 8vw;
+    }
+  }
+
+  .section-details {
+    &__detail {
+      padding-left: 81px;
+      text-align: start;
+    }
+    &__detail:nth-child(1) {
+      font-family: "ppneuemontreal-normal";
+      line-height: 18px;
+      font-size: 1vw;
+      span {
+        padding-left: 2.2px;
+      }
+    }
+
+    &__detail:nth-child(2) {
+      font-family: "flexible-hw";
+      font-size: 5vw;
+      margin-top: -30px;
+      font-weight: lighter;
     }
   }
 }

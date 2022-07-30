@@ -12,11 +12,12 @@
 
     p {
       margin-bottom: 0;
+      width: fit-content;
     }
   }
 
-  nav {
-    width: 100%;
+  .col:nth-child(3) {
+    justify-content: end;
   }
 
   .nav-list {
@@ -24,6 +25,7 @@
     padding: 0;
     width: fit-content;
     margin-bottom: 0;
+    display: none;
 
     &__item {
       line-height: 13.5px;
@@ -35,23 +37,30 @@
 
   .nav-list-hamburger {
     list-style: none;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 12vw;
 
     &__item {
       display: flex;
       justify-content: center;
     }
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  .hamburger-menu {
+    text-align: end;
   }
 }
 
 .section-title {
-  margin-top: 5vw;
+  margin-top: 12vw;
 
   &__title {
     font-family: "flexible-hw";
-    font-size: 8vw;
-    line-height: 8vw;
+    font-size: 12vw;
+    line-height: 12vw;
     width: 70%;
     text-align: end;
     position: relative;
@@ -64,7 +73,7 @@
   margin-top: 5.5vw;
 
   &__detail {
-    padding-left: 81px;
+    text-align: end;
   }
 
   &__detail:nth-child(1) {
