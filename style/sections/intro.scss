@@ -6,7 +6,7 @@
   font-family: "ppneuemontreal-normal";
 
   &__item {
-    font-size: 1vw;
+    font-size: 3.5vw;
   }
 
   .col:nth-child(1) {
@@ -41,5 +41,22 @@
     line-height: 50px;
     padding-bottom: 1.5px;
     border-bottom: 2px solid variables.$text-color;
+  }
+}
+
+.section-intro-mobile {
+  margin-top: 100px;
+  font-family: "ppneuemontreal-normal";
+
+  &__item {
+    text-align: justify;
+  }
+
+  &__certificates {
+    margin-top: 20px;
+    text-align: end;
+    a {
+      border-bottom: 1px solid variables.$text-color;
+    }
   }
 }

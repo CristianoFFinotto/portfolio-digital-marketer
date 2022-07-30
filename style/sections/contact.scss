@@ -32,6 +32,7 @@
   .row:nth-child(3) {
     font-size: 16px;
     padding-top: 100px;
+    line-height: 17px;
 
     .col:nth-child(2) {
       display: flex;
@@ -56,5 +57,31 @@
 
   &__copyright {
     margin-left: 189px;
+  }
+}
+
+.section-contact-mobile {
+  font-family: "ppneuemontreal-normal";
+  line-height: 15px;
+
+  margin-top: 50px;
+  &__social {
+    display: flex;
+    flex-direction: column;
+    font-size: 2vw;
+  }
+
+  &__email {
+    text-align: end;
+    font-size: 6vw;
+    line-height: 5vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  &__copyright {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
   }
 }

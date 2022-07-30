@@ -5590,6 +5590,7 @@ a:hover {
 .header {
   margin-top: 4vw;
   padding-left: 4vw;
+  font-family: "ppneuemontreal-normal";
 }
 .header .col {
   display: flex;
@@ -5601,6 +5602,7 @@ a:hover {
 .header .col p {
   margin-bottom: 0;
   width: fit-content;
+  line-height: 15px;
 }
 .header .col:nth-child(3) {
   justify-content: end;
@@ -5613,7 +5615,7 @@ a:hover {
   display: none;
 }
 .header .nav-list__item {
-  line-height: 13.5px;
+  line-height: 10px;
   color: #dcff7d;
   text-decoration: none;
   font-weight: 500;
@@ -5621,6 +5623,8 @@ a:hover {
 .header .nav-list-hamburger {
   list-style: none;
   margin-top: 12vw;
+  margin-right: 12;
+  padding: 0;
 }
 .header .nav-list-hamburger__item {
   display: flex;
@@ -5640,10 +5644,8 @@ a:hover {
   font-family: "flexible-hw";
   font-size: 12vw;
   line-height: 12vw;
-  width: 70%;
-  text-align: end;
-  position: relative;
-  left: -9vw;
+  width: 100%;
+  text-align: center;
   font-weight: lighter;
 }
 
@@ -5651,19 +5653,19 @@ a:hover {
   margin-top: 5.5vw;
 }
 .section-details__detail {
-  text-align: end;
+  text-align: start;
 }
 .section-details__detail:nth-child(1) {
   font-family: "ppneuemontreal-normal";
   line-height: 18px;
-  font-size: 1vw;
+  font-size: 3vw;
 }
 .section-details__detail:nth-child(1) span {
   padding-left: 2.2px;
 }
 .section-details__detail:nth-child(2) {
   font-family: "flexible-hw";
-  font-size: 5vw;
+  font-size: 10vw;
   margin-top: -30px;
   font-weight: lighter;
 }
@@ -5678,7 +5680,7 @@ a:hover {
   font-family: "ppneuemontreal-normal";
 }
 .section-intro__item {
-  font-size: 1vw;
+  font-size: 3.5vw;
 }
 .section-intro .col:nth-child(1) .section-intro__item:nth-child(1) {
   width: 62.75px;
@@ -5705,6 +5707,21 @@ a:hover {
   line-height: 50px;
   padding-bottom: 1.5px;
   border-bottom: 2px solid #dcff7d;
+}
+
+.section-intro-mobile {
+  margin-top: 100px;
+  font-family: "ppneuemontreal-normal";
+}
+.section-intro-mobile__item {
+  text-align: justify;
+}
+.section-intro-mobile__certificates {
+  margin-top: 20px;
+  text-align: end;
+}
+.section-intro-mobile__certificates a {
+  border-bottom: 1px solid #dcff7d;
 }
 
 .separator {
@@ -5746,17 +5763,22 @@ a:hover {
   width: 100%;
 }
 
+.separator-mobile__item:nth-child(1) {
+  margin: 0;
+}
+.separator-mobile__line {
+  opacity: 1;
+}
+
 .section-projects {
   padding-left: 5vw;
+  font-family: "ppneuemontreal-normal";
 }
 .section-projects__project-title {
   font-size: 4vw;
   margin-bottom: 0;
   display: flex;
   align-items: center;
-}
-.section-projects__project-title--font {
-  font-family: "flexible-variable";
 }
 .section-projects .col {
   display: flex;
@@ -5767,6 +5789,10 @@ a:hover {
 }
 .section-projects .row:nth-child(1) .col:nth-child(1) .section-projects__project-title {
   padding-left: 62.75px;
+}
+.section-projects .row:nth-child(1) .col:nth-child(1) .section-projects__project-title span {
+  font-family: "flexible-variable";
+  padding-bottom: 10px;
 }
 .section-projects .row:nth-child(2) {
   padding-top: 3vw;
@@ -5787,6 +5813,23 @@ a:hover {
   width: 200px;
   height: 100px;
   background-color: red;
+}
+
+.section-projects-mobile {
+  margin-top: 50px;
+  font-family: "ppneuemontreal-normal";
+}
+.section-projects-mobile .row {
+  padding: 3px 0;
+}
+.section-projects-mobile .col:nth-child(2) {
+  display: flex;
+  justify-content: end;
+}
+.section-projects-mobile__project-image {
+  background-color: greenyellow;
+  width: 200px;
+  height: 100px;
 }
 
 .section-contact {
@@ -5815,6 +5858,7 @@ a:hover {
 .section-contact .row:nth-child(3) {
   font-size: 16px;
   padding-top: 100px;
+  line-height: 17px;
 }
 .section-contact .row:nth-child(3) .col:nth-child(2) {
   display: flex;
@@ -5836,6 +5880,29 @@ a:hover {
   margin-left: 189px;
 }
 
+.section-contact-mobile {
+  font-family: "ppneuemontreal-normal";
+  line-height: 15px;
+  margin-top: 50px;
+}
+.section-contact-mobile__social {
+  display: flex;
+  flex-direction: column;
+  font-size: 2vw;
+}
+.section-contact-mobile__email {
+  text-align: end;
+  font-size: 6vw;
+  line-height: 5vw;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.section-contact-mobile__copyright {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
 /* tablet */
 @media (min-width: 768px) {
   .section-title {
@@ -5844,6 +5911,7 @@ a:hover {
   .section-title__title {
     font-size: 12vw;
     line-height: 12vw;
+    text-align: end;
   }
   .section-details__detail:nth-child(1) {
     font-family: "ppneuemontreal-normal";
@@ -5865,6 +5933,9 @@ a:hover {
 }
 /* PC */
 @media (min-width: 992px) {
+  .header .col:nth-child(3) {
+    justify-content: start;
+  }
   .header .nav-list {
     display: flex;
   }
@@ -5880,6 +5951,10 @@ a:hover {
   .section-title__title {
     font-size: 8vw;
     line-height: 8vw;
+    width: 70%;
+    position: relative;
+    left: -9vw;
+    text-align: end;
   }
   .section-details__detail {
     padding-left: 81px;
@@ -5898,6 +5973,9 @@ a:hover {
     font-size: 5vw;
     margin-top: -30px;
     font-weight: lighter;
+  }
+  .section-intro__item {
+    font-size: 1vw;
   }
 }
 html body {

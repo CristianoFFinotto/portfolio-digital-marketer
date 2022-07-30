@@ -43,3 +43,12 @@
     width: 100%;
   }
 }
+
+.separator-mobile {
+  &__item:nth-child(1) {
+    margin: 0;
+  }
+  &__line {
+    opacity: 1;
+  }
+}

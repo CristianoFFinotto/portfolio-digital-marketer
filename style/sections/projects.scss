@@ -1,15 +1,12 @@
 .section-projects {
   padding-left: 5vw;
+  font-family: "ppneuemontreal-normal";
 
   &__project-title {
     font-size: 4vw;
     margin-bottom: 0;
     display: flex;
     align-items: center;
-
-    &--font {
-      font-family: "flexible-variable";
-    }
   }
 
   .col {
@@ -22,6 +19,11 @@
     .col:nth-child(1) {
       .section-projects__project-title {
         padding-left: 62.75px;
+
+        span {
+          font-family: "flexible-variable";
+          padding-bottom: 10px;
+        }
       }
     }
   }
@@ -50,5 +52,24 @@
     height: 100px;
 
     background-color: red;
+  }
+}
+
+.section-projects-mobile {
+  margin-top: 50px;
+  font-family: "ppneuemontreal-normal";
+
+  .row {
+    padding: 3px 0;
+  }
+
+  .col:nth-child(2) {
+    display: flex;
+    justify-content: end;
+  }
+  &__project-image {
+    background-color: greenyellow;
+    width: 200px;
+    height: 100px;
   }
 }
