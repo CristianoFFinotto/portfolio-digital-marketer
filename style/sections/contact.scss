@@ -1,0 +1,60 @@
+.section-contact {
+  font-family: "ppneuemontreal-normal";
+  line-height: 1.3vw;
+  padding-left: 5vw;
+  margin-top: 5vh;
+
+  .row:nth-child(1) {
+    .col:nth-child(1) {
+      .section-contact__info {
+        font-size: 1.3vw;
+        padding-left: 62.75px;
+      }
+    }
+  }
+
+  .row:nth-child(2) {
+    .col-auto {
+      display: flex;
+      justify-content: end;
+      .section-contact__info {
+        font-size: 5vw;
+        line-height: 4.3vw;
+        text-align: end;
+        padding-top: 5vw;
+        width: fit-content;
+        position: relative;
+        left: 180px;
+      }
+    }
+  }
+
+  .row:nth-child(3) {
+    font-size: 16px;
+    padding-top: 100px;
+
+    .col:nth-child(2) {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  &__linkedin {
+    padding-left: 82px;
+    margin-right: 17px;
+  }
+
+  &__telegram {
+    position: relative;
+    left: 105px;
+  }
+
+  &__google {
+    padding-left: 68px;
+    margin-right: 18px;
+  }
+
+  &__copyright {
+    margin-left: 189px;
+  }
+}

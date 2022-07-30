@@ -1,0 +1,89 @@
+.header {
+  margin-top: 4vw;
+  padding-left: 4vw;
+
+  .col {
+    display: flex;
+    align-items: center;
+
+    a {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    width: fit-content;
+    margin-bottom: 0;
+
+    &__item {
+      line-height: 13.5px;
+      color: variables.$text-color;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+
+  .nav-list-hamburger {
+    list-style: none;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    &__item {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.section-title {
+  margin-top: 5vw;
+
+  &__title {
+    font-family: "flexible-hw";
+    font-size: 8vw;
+    line-height: 8vw;
+    width: 70%;
+    text-align: end;
+    position: relative;
+    left: -9vw;
+    font-weight: lighter;
+  }
+}
+
+.section-details {
+  margin-top: 5.5vw;
+
+  &__detail {
+    padding-left: 81px;
+  }
+
+  &__detail:nth-child(1) {
+    font-family: "ppneuemontreal-normal";
+    line-height: 18px;
+    font-size: 1vw;
+    span {
+      padding-left: 2.2px;
+    }
+  }
+
+  &__detail:nth-child(2) {
+    font-family: "flexible-hw";
+    font-size: 5vw;
+    margin-top: -30px;
+    font-weight: lighter;
+
+    span {
+      margin-left: 10px;
+    }
+  }
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matteo Rexhepi</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
     <link rel="stylesheet" href="./style/main.css" />
   </head>
 
@@ -20,6 +21,9 @@
         </div>
         <div class="col">
           <nav>
+            <div class="hamburger-menu">
+              <img src="./img/hamburger-menu.svg" alt="hamburger menu" />
+            </div>
             <ul class="nav-list">
               <li class="nav-list__item">
                 <a href=""
@@ -48,9 +52,22 @@
           </nav>
         </div>
       </div>
+      <nav>
+        <ul class="nav-list-hamburger nav-list-hamburger--hide">
+          <li class="nav-list-hamburger__item">
+            <a href=""><span class="nav-list-hamburger__item">WORK</span> </a>
+          </li>
+          <li class="nav-list-hamburger__item">
+            <a href=""><span class="nav-list-hamburger__item">ABOUT</span> </a>
+          </li>
+          <li class="nav-list-hamburger__item">
+            <a href=""><span class="nav-list-hamburger__item">CONTACT</span></a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <section class="container section-title">
+    <div class="container section-title">
       <div class="row">
         <div class="col"></div>
         <div class="col-auto">
@@ -60,9 +77,9 @@
         </div>
         <div class="col"></div>
       </div>
-    </section>
+    </div>
 
-    <section class="container section-details">
+    <div class="container section-details">
       <div class="row">
         <div class="col"></div>
         <div class="col"></div>
@@ -78,9 +95,9 @@
           </p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="container-fluid section-intro">
+    <div class="container-fluid section-intro">
       <div class="row">
         <div class="col">
           <p class="section-intro__item">01/</p>
@@ -113,12 +130,13 @@
         </div>
         <div class="col"></div>
       </div>
-    </section>
+    </div>
 
-    <section class="container-fluid separator">
+    <div class="container-fluid separator">
       <div class="row">
         <div class="col-2">
-          <p class="separator__item">02/<hr class="separator__line" style="padding-left: 100px;"/></p>
+          <p class="separator__item">02/</p>
+          <hr class="separator__line" />
         </div>
         <div class="col">
           <hr class="separator__line" />
@@ -127,9 +145,9 @@
           <p class="separator__item">PRJCTS.</p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="container-fluid section-projects">
+    <div class="container-fluid section-projects">
       <div class="row">
         <div class="col">
           <p class="section-projects__project-title">
@@ -159,23 +177,24 @@
         </div>
         <div class="col"></div>
       </div>
-    </section>
+    </div>
 
-    <section class="container-fluid separator">
+    <div class="container-fluid separator">
       <div class="row">
-        <div class="col">
+        <div class="col-2">
           <p class="separator__item">03/</p>
+          <hr class="separator__line" />
         </div>
         <div class="col">
-          <div class="separator__line"></div>
+          <hr class="separator__line" />
         </div>
-        <div class="col">
+        <div class="col-2">
           <p class="separator__item">CNTACT.</p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="container-fluid section-contact">
+    <div class="container-fluid section-contact">
       <div class="row">
         <div class="col">
           <p class="section-contact__info">
@@ -212,6 +231,8 @@
           <p class="section-contact__copyright">&copy;2022</p>
         </div>
       </div>
-    </section>
+    </div>
+
+    <script src="./script/hamburger-menu.js"></script>
   </body>
 </html>
