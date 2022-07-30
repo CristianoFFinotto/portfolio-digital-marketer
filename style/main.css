@@ -5639,11 +5639,11 @@ a:hover {
 
 .section-title__title {
   font-family: "flexible-hw";
-  font-size: 15vw;
-  line-height: 14vw;
+  font-size: 12vw;
   width: 100%;
   text-align: center;
   font-weight: lighter;
+  margin-top: 60px;
 }
 
 .section-details {
@@ -5706,25 +5706,25 @@ a:hover {
   border-bottom: 2px solid #dcff7d;
 }
 
-.section-intro-mobile {
+.section-intro-mobile-tablet {
   margin-top: 100px;
   font-family: "ppneuemontreal-normal";
 }
-.section-intro-mobile .row:nth-child(3) {
+.section-intro-mobile-tablet .row:nth-child(3) {
   display: flex;
   justify-content: end;
 }
-.section-intro-mobile .row:nth-child(3) .section-intro-mobile__item {
+.section-intro-mobile-tablet .row:nth-child(3) .section-intro-mobile__item {
   text-align: justify;
 }
-.section-intro-mobile__item {
+.section-intro-mobile-tablet__item {
   text-align: justify;
 }
-.section-intro-mobile__certificates {
+.section-intro-mobile-tablet__certificates {
   margin-top: 20px;
   text-align: end;
 }
-.section-intro-mobile__certificates a {
+.section-intro-mobile-tablet__certificates a {
   border-bottom: 1px solid #dcff7d;
 }
 
@@ -5927,8 +5927,10 @@ a:hover {
     margin-top: 12vw;
   }
   .section-title__title {
-    font-size: 12vw;
-    line-height: 12vw;
+    font-size: 15vw;
+    line-height: 14vw;
+    margin-top: 0px;
+    margin-bottom: 30px;
   }
   .section-details__detail:nth-child(1) {
     font-family: "ppneuemontreal-normal";
