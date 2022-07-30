@@ -6,7 +6,6 @@
     &__title {
       font-size: 12vw;
       line-height: 12vw;
-      text-align: end;
     }
   }
 
@@ -30,6 +29,12 @@
 
   .nav-list-hamburger {
     margin-top: 12vw;
+  }
+
+  .section-contact-mobile {
+    &__social {
+      line-height: 2.4vw;
+    }
   }
 }
 

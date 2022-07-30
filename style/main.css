@@ -5637,13 +5637,10 @@ a:hover {
   text-align: end;
 }
 
-.section-title {
-  margin-top: 12vw;
-}
 .section-title__title {
   font-family: "flexible-hw";
-  font-size: 12vw;
-  line-height: 12vw;
+  font-size: 15vw;
+  line-height: 14vw;
   width: 100%;
   text-align: center;
   font-weight: lighter;
@@ -5657,7 +5654,7 @@ a:hover {
 }
 .section-details__detail:nth-child(1) {
   font-family: "ppneuemontreal-normal";
-  line-height: 18px;
+  line-height: 3vw;
   font-size: 3vw;
 }
 .section-details__detail:nth-child(1) span {
@@ -5666,7 +5663,7 @@ a:hover {
 .section-details__detail:nth-child(2) {
   font-family: "flexible-hw";
   font-size: 10vw;
-  margin-top: -30px;
+  margin-top: -25px;
   font-weight: lighter;
 }
 .section-details__detail:nth-child(2) span {
@@ -5712,6 +5709,13 @@ a:hover {
 .section-intro-mobile {
   margin-top: 100px;
   font-family: "ppneuemontreal-normal";
+}
+.section-intro-mobile .row:nth-child(3) {
+  display: flex;
+  justify-content: end;
+}
+.section-intro-mobile .row:nth-child(3) .section-intro-mobile__item {
+  text-align: justify;
 }
 .section-intro-mobile__item {
   text-align: justify;
@@ -5836,11 +5840,10 @@ a:hover {
   font-family: "ppneuemontreal-normal";
   line-height: 1.3vw;
   padding-left: 5vw;
-  margin-top: 5vh;
 }
 .section-contact .row:nth-child(1) .col:nth-child(1) .section-contact__info {
   font-size: 1.3vw;
-  padding-left: 62.75px;
+  padding-left: 42px;
 }
 .section-contact .row:nth-child(2) .col-auto {
   display: flex;
@@ -5885,10 +5888,25 @@ a:hover {
   line-height: 15px;
   margin-top: 50px;
 }
+.section-contact-mobile .row:nth-child(3) {
+  padding-bottom: 20px;
+}
+.section-contact-mobile .row:nth-child(3) a:nth-child(2) {
+  padding-left: 40px;
+}
+.section-contact-mobile .row:nth-child(3) a:nth-child(3) {
+  padding-left: 20px;
+}
+.section-contact-mobile .row:nth-child(3) a:nth-child(4) {
+  padding-left: 40px;
+}
+.section-contact-mobile .row:nth-child(3) a:nth-child(5) {
+  padding-left: 60px;
+}
 .section-contact-mobile__social {
   display: flex;
   flex-direction: column;
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 .section-contact-mobile__email {
   text-align: end;
@@ -5911,7 +5929,6 @@ a:hover {
   .section-title__title {
     font-size: 12vw;
     line-height: 12vw;
-    text-align: end;
   }
   .section-details__detail:nth-child(1) {
     font-family: "ppneuemontreal-normal";
@@ -5929,6 +5946,9 @@ a:hover {
   }
   .nav-list-hamburger {
     margin-top: 12vw;
+  }
+  .section-contact-mobile__social {
+    line-height: 2.4vw;
   }
 }
 /* PC */
