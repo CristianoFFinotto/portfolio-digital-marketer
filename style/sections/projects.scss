@@ -1,5 +1,21 @@
-.section-projects-mobile {
+.section-projects-tablet {
   margin-top: 50px;
+  font-family: "ppneuemontreal-normal";
+
+  .row {
+    padding: 1vw 0;
+  }
+
+  .col:nth-child(2) {
+    display: flex;
+    justify-content: end;
+  }
+  &__project-image {
+    border-radius: 5px;
+  }
+}
+
+.section-projects-mobile {
   font-family: "ppneuemontreal-normal";
 
   .row {
@@ -9,6 +25,12 @@
   .col:nth-child(2) {
     display: flex;
     justify-content: end;
+  }
+
+  &__project-title {
+    text-align: center;
+    margin-top: 6vw;
+    margin-bottom: 2vw;
   }
   &__project-image {
     border-radius: 5px;

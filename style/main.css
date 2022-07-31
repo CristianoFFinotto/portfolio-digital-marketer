@@ -5744,8 +5744,22 @@ a:hover {
   margin-top: 50px;
 }
 
-.section-projects-mobile {
+.section-projects-tablet {
   margin-top: 50px;
+  font-family: "ppneuemontreal-normal";
+}
+.section-projects-tablet .row {
+  padding: 1vw 0;
+}
+.section-projects-tablet .col:nth-child(2) {
+  display: flex;
+  justify-content: end;
+}
+.section-projects-tablet__project-image {
+  border-radius: 5px;
+}
+
+.section-projects-mobile {
   font-family: "ppneuemontreal-normal";
 }
 .section-projects-mobile .row {
@@ -5754,6 +5768,11 @@ a:hover {
 .section-projects-mobile .col:nth-child(2) {
   display: flex;
   justify-content: end;
+}
+.section-projects-mobile__project-title {
+  text-align: center;
+  margin-top: 6vw;
+  margin-bottom: 2vw;
 }
 .section-projects-mobile__project-image {
   border-radius: 5px;
