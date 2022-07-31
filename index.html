@@ -9,79 +9,65 @@
   </head>
 
   <body class="container-fluid">
-    <div style="height: 100vh; position: relative">
-      <div
-        style="
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        "
-      >
-        <header class="container-fluid header">
-          <div class="row">
-            <div class="col">
-              <a href="/" class="header__item">
-                <p style="width: fit-content">MATTEO <br />REXHEPI</p>
-              </a>
-            </div>
-            <div class="col d-none d-md-block">
-              <p class="header__item">BASED <br />IN ITALY</p>
-            </div>
-            <div class="col">
-              <nav>
-                <div class="hamburger-menu">
-                  <img src="./img/hamburger-menu.svg" alt="hamburger menu" />
-                </div>
-                <ul class="nav-list">
-                  <li class="nav-list__item">
-                    <a href=""
-                      ><span class="nav-list__item hover-underline-animation"
-                        >WORK</span
-                      >
-                    </a>
-                  </li>
-                  <li class="nav-list__item">
-                    ,
-                    <a href=""
-                      ><span class="nav-list__item hover-underline-animation"
-                        >ABOUT</span
-                      >
-                    </a>
-                  </li>
-                  <li class="nav-list__item">
-                    ,
-                    <a href=""
-                      ><span class="nav-list__item hover-underline-animation"
-                        >CONTACT</span
-                      ></a
-                    >
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
+    <header class="container-fluid header">
+      <div class="row">
+        <div class="col">
+          <a href="/" class="header__item">
+            <p style="width: fit-content">MATTEO <br />REXHEPI</p>
+          </a>
+        </div>
+        <div class="col d-none d-md-block">
+          <p class="header__item">BASED <br />IN ITALY</p>
+        </div>
+        <div class="col">
           <nav>
-            <ul class="nav-list-hamburger nav-list-hamburger--hide">
-              <li class="nav-list-hamburger__item">
+            <div class="hamburger-menu">
+              <img src="./img/hamburger-menu.svg" alt="hamburger menu" />
+            </div>
+            <ul class="nav-list">
+              <li class="nav-list__item">
                 <a href=""
-                  ><span class="nav-list-hamburger__item">WORK</span>
+                  ><span class="nav-list__item hover-underline-animation"
+                    >WORK</span
+                  >
                 </a>
               </li>
-              <li class="nav-list-hamburger__item">
+              <li class="nav-list__item">
+                ,
                 <a href=""
-                  ><span class="nav-list-hamburger__item">ABOUT</span>
+                  ><span class="nav-list__item hover-underline-animation"
+                    >ABOUT</span
+                  >
                 </a>
               </li>
-              <li class="nav-list-hamburger__item">
+              <li class="nav-list__item">
+                ,
                 <a href=""
-                  ><span class="nav-list-hamburger__item">CONTACT</span></a
+                  ><span class="nav-list__item hover-underline-animation"
+                    >CONTACT</span
+                  ></a
                 >
               </li>
             </ul>
           </nav>
-        </header>
-
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-list-hamburger nav-list-hamburger--hide">
+          <li class="nav-list-hamburger__item">
+            <a href=""><span class="nav-list-hamburger__item">WORK</span> </a>
+          </li>
+          <li class="nav-list-hamburger__item">
+            <a href=""><span class="nav-list-hamburger__item">ABOUT</span> </a>
+          </li>
+          <li class="nav-list-hamburger__item">
+            <a href=""><span class="nav-list-hamburger__item">CONTACT</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="hero">
+      <div class="hero--centered">
         <div class="container section-title">
           <div class="row">
             <div class="col d-none d-md-block"></div>
@@ -128,8 +114,6 @@
 
         <div class="container section-details d-lg-none">
           <div class="row">
-            <div class="col d-none d-lg-block"></div>
-            <div class="col d-none d-lg-block"></div>
             <div class="col">
               <p class="section-details__detail">
                 I SUPPORT CLIENTS AND <br />
@@ -284,14 +268,14 @@
           <p class="section-projects__project-title"><span>.</span>FreBrush</p>
         </div>
         <div class="col">
-          <div class="section-projects__project-image"></div>
+          <img src="./img/CatturaFreBrush.PNG" alt="" class="img-fluid" />
         </div>
         <div class="col"></div>
       </div>
       <div class="row">
         <div class="col"></div>
         <div class="col">
-          <div class="section-projects__project-image"></div>
+          <img src="./img/Cattura ledep.PNG" alt="" class="img-fluid" />
         </div>
         <div class="col">
           <p class="section-projects__project-title">Ledep</p>
@@ -299,7 +283,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <div class="section-projects__project-image"></div>
+          <img src="./img/CatturaFirDesign.PNG" alt="" class="img-fluid" />
         </div>
         <div class="col">
           <p class="section-projects__project-title">FirDesign /</p>
@@ -314,7 +298,7 @@
           <p class="">FREBRUSH</p>
         </div>
         <div class="col">
-          <div class="section-projects-mobile__project-image"></div>
+          <img src="./img/CatturaFreBrush.PNG" alt="" class="img-fluid" />
         </div>
       </div>
       <div class="row">
@@ -322,7 +306,7 @@
           <p class="">LEDEP</p>
         </div>
         <div class="col">
-          <div class="section-projects-mobile__project-image"></div>
+          <img src="./img/Cattura ledep.PNG" alt="" class="img-fluid" />
         </div>
       </div>
       <div class="row">
@@ -330,7 +314,7 @@
           <p class="">FIRDESIGN</p>
         </div>
         <div class="col">
-          <div class="section-projects-mobile__project-image"></div>
+          <img src="./img/CatturaFirDesign.PNG" alt="" class="img-fluid" />
         </div>
       </div>
     </div>

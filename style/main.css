@@ -5643,7 +5643,7 @@ a:hover {
   width: 100%;
   text-align: center;
   font-weight: lighter;
-  margin-top: 60px;
+  margin-top: 35px;
 }
 
 .section-details {
@@ -5981,12 +5981,12 @@ a:hover {
     line-height: 8vw;
     width: 70%;
     position: relative;
-    left: -9vw;
+    top: -15vh;
     text-align: end;
   }
   .section-details__detail {
     padding-left: 81px;
-    text-align: start;
+    text-align: center;
   }
   .section-details__detail:nth-child(1) {
     font-family: "ppneuemontreal-normal";
@@ -6004,6 +6004,17 @@ a:hover {
   }
   .section-intro__item {
     font-size: 1vw;
+  }
+  .hero {
+    height: 100vh;
+    position: relative;
+  }
+  .hero--centered {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 html body {
