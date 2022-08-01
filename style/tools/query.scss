@@ -43,6 +43,10 @@
 
 /* PC */
 @media (min-width: 992px) {
+  html {
+    overflow-x: hidden;
+  }
+
   .header {
     .col:nth-child(3) {
       justify-content: start;
@@ -50,7 +54,7 @@
     .nav-list {
       display: flex;
     }
-    .hamburger-menu {
+    .hamburger {
       display: none;
     }
     .nav-list-hamburger {
@@ -102,6 +106,8 @@
 
     &__item {
       font-size: 1vw;
+      width: 65px;
+      text-align: end;
     }
 
     &__item--font-increase {
