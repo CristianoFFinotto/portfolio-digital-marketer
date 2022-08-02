@@ -5587,6 +5587,7 @@ a:hover {
   background: #dcff7d;
 }
 
+/* mobile - tablet - PC version */
 .header {
   margin-top: 4vw;
   padding-left: 4vw;
@@ -5672,7 +5673,7 @@ a:hover {
   display: none;
 }
 
-/**** mobile - tablet ****/
+/**** mobile - tablet version ****/
 .section-title__title {
   font-family: "flexible-hw";
   font-size: 12vw;
@@ -5706,7 +5707,7 @@ a:hover {
   margin-left: 10px;
 }
 
-/********/
+/* mobile - tablet version */
 .section-intro-mobile-tablet {
   margin-top: 100px;
   font-family: "ppneuemontreal-normal";
@@ -5779,6 +5780,7 @@ a:hover {
   margin-top: 50px;
 }
 
+/* tablet version */
 .section-projects-tablet {
   margin-top: 50px;
   font-family: "ppneuemontreal-normal";
@@ -5813,6 +5815,7 @@ a:hover {
   border-radius: 5px;
 }
 
+/* mobile - tablet version */
 .section-contact-mobile {
   font-family: "ppneuemontreal-normal";
   line-height: 25px;
@@ -5837,7 +5840,7 @@ a:hover {
 .section-contact-mobile__social {
   display: flex;
   flex-direction: column;
-  font-size: 4vw;
+  font-size: 3vw;
 }
 .section-contact-mobile__email {
   text-align: end;
@@ -5913,6 +5916,17 @@ a:hover {
     top: -10vh;
     text-align: end;
     left: -8vw;
+  }
+  .section-title__title strong {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+  .section-title__title strong div:nth-child(7) {
+    margin-right: 1.5vw;
+  }
+  .section-title__title strong div:nth-child(17) {
+    margin-left: 5vw;
   }
   .section-details__detail {
     padding-left: 81px;

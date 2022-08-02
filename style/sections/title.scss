@@ -1,0 +1,40 @@
+/**** mobile - tablet version ****/
+
+.section-title {
+  &__title {
+    font-family: "flexible-hw";
+    font-size: 12vw;
+    width: 100%;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 35px;
+  }
+}
+
+.section-details {
+  margin-top: 5.5vw;
+
+  &__detail {
+    text-align: start;
+  }
+
+  &__detail:nth-child(1) {
+    font-family: "ppneuemontreal-normal";
+    line-height: 3vw;
+    font-size: 3vw;
+    span {
+      padding-left: 2.2px;
+    }
+  }
+
+  &__detail:nth-child(2) {
+    font-family: "flexible-hw";
+    font-size: 10vw;
+    margin-top: -25px;
+    font-weight: lighter;
+
+    span {
+      margin-left: 10px;
+    }
+  }
+}
